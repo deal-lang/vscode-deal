@@ -1,0 +1,126 @@
+{
+  "partdef": {
+    "prefix": "partdef",
+    "body": [
+      "part def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a part definition (SD-1)."
+  },
+  "portdef": {
+    "prefix": "portdef",
+    "body": [
+      "port def ${1:Name} {",
+      "  direction: ${2|in,out,inout|};",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a port definition with direction (SD-1, SD-8)."
+  },
+  "actiondef": {
+    "prefix": "actiondef",
+    "body": [
+      "action def ${1:Name}(${2:params}) {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare an action definition with parameters (SD-1)."
+  },
+  "statedef": {
+    "prefix": "statedef",
+    "body": [
+      "state def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a state definition (SD-1)."
+  },
+  "reqdef": {
+    "prefix": "reqdef",
+    "body": [
+      "requirement def ${1:ReqId} {",
+      "  doc: \"${2:Requirement statement}\";",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a requirement definition with doc text (SD-1, SD-18)."
+  },
+  "constraintdef": {
+    "prefix": "constraintdef",
+    "body": [
+      "constraint def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a constraint definition (SD-1)."
+  },
+  "attrdef": {
+    "prefix": "attrdef",
+    "body": [
+      "attribute def ${1:Name} : ${2:Type};"
+    ],
+    "description": "Declare an attribute definition with type (SD-1, SD-2)."
+  },
+  "itemdef": {
+    "prefix": "itemdef",
+    "body": [
+      "item def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare an item definition (SD-1)."
+  },
+  "ifacedef": {
+    "prefix": "ifacedef",
+    "body": [
+      "interface def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare an interface definition (SD-1)."
+  },
+  "conndef": {
+    "prefix": "conndef",
+    "body": [
+      "connection def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a connection definition (SD-1, CS-5)."
+  },
+  "flowdef": {
+    "prefix": "flowdef",
+    "body": [
+      "flow def ${1:Name} {",
+      "  source: ${2:src};",
+      "  target: ${3:dst};",
+      "}"
+    ],
+    "description": "Declare a flow definition with source and target (SD-1, CS-5)."
+  },
+  "header": {
+    "prefix": "header",
+    "body": [
+      "@header {",
+      "  $0",
+      "}"
+    ],
+    "description": "Insert a @header { ... } block (FS-1, FS-2)."
+  },
+  "import": {
+    "prefix": "import",
+    "body": [
+      "import ${1:path};"
+    ],
+    "description": "Insert an import statement (PS-4)."
+  },
+  "pkg": {
+    "prefix": "pkg",
+    "body": [
+      "package ${1:path};",
+      "$0"
+    ],
+    "description": "Insert a package declaration (PS-2)."
+  }
+}

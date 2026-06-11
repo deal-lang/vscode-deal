@@ -1,0 +1,270 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "DEAL Composition",
+  "scopeName": "source.dealx",
+  "fileTypes": ["dealx"],
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#composition-tag-close" },
+    { "include": "#composition-tag-open" },
+    { "include": "#annotations" },
+    { "include": "#relationship-operators" },
+    { "include": "#multiplicity" },
+    { "include": "#element-keywords" },
+    { "include": "#direction-keywords" },
+    { "include": "#modifier-keywords" },
+    { "include": "#import-keywords" },
+    { "include": "#type-reference" },
+    { "include": "#numbers" },
+    { "include": "#punctuation" }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.documentation.deal",
+          "begin": "/\\*\\*",
+          "end": "\\*/",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.comment.documentation.begin.deal" }
+          },
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.comment.documentation.end.deal" }
+          },
+          "patterns": [
+            {
+              "match": "(@[A-Za-z_][A-Za-z0-9_]*)",
+              "captures": {
+                "1": { "name": "storage.type.class.jsdoc.deal" }
+              }
+            }
+          ]
+        },
+        {
+          "name": "comment.block.deal",
+          "begin": "/\\*",
+          "end": "\\*/",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.comment.begin.deal" }
+          },
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.comment.end.deal" }
+          }
+        },
+        {
+          "name": "comment.line.double-slash.deal",
+          "match": "//[^\\n]*",
+          "captures": {
+            "0": { "name": "comment.line.double-slash.deal" }
+          }
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.deal",
+          "begin": "\"",
+          "end": "\"",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.string.begin.deal" }
+          },
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.string.end.deal" }
+          },
+          "patterns": [
+            {
+              "name": "constant.character.escape.deal",
+              "match": "\\\\(?:[\"\\\\/bfnrt]|u[0-9A-Fa-f]{4})"
+            }
+          ]
+        },
+        {
+          "name": "string.quoted.template.deal",
+          "begin": "`",
+          "end": "`",
+          "beginCaptures": {
+            "0": { "name": "punctuation.definition.string.template.begin.deal" }
+          },
+          "endCaptures": {
+            "0": { "name": "punctuation.definition.string.template.end.deal" }
+          },
+          "patterns": [
+            {
+              "name": "constant.character.escape.deal",
+              "match": "\\\\(?:[`\\\\/bfnrt]|u[0-9A-Fa-f]{4})"
+            },
+            {
+              "name": "meta.template.expression.deal",
+              "begin": "\\$\\{",
+              "end": "\\}",
+              "beginCaptures": {
+                "0": { "name": "punctuation.definition.template-expression.begin.deal" }
+              },
+              "endCaptures": {
+                "0": { "name": "punctuation.definition.template-expression.end.deal" }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "composition-tag-open": {
+      "patterns": [
+        {
+          "match": "(\\[<)\\s*([A-Za-z_][A-Za-z0-9_]*)",
+          "captures": {
+            "1": { "name": "punctuation.definition.tag.begin.deal" },
+            "2": { "name": "entity.other.attribute-name.composition.deal" }
+          }
+        }
+      ]
+    },
+    "composition-tag-close": {
+      "patterns": [
+        {
+          "match": "(\\[</)\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*(>\\])",
+          "captures": {
+            "1": { "name": "punctuation.definition.tag.begin.deal" },
+            "2": { "name": "entity.other.attribute-name.composition.deal" },
+            "3": { "name": "punctuation.definition.tag.end.deal" }
+          }
+        },
+        {
+          "match": "(/?>\\])",
+          "captures": {
+            "1": { "name": "punctuation.definition.tag.end.deal" }
+          }
+        }
+      ]
+    },
+    "annotations": {
+      "patterns": [
+        {
+          "match": "(@)([A-Za-z_][A-Za-z0-9_]*)",
+          "captures": {
+            "1": { "name": "punctuation.definition.annotation.deal" },
+            "2": { "name": "support.type.annotation.deal" }
+          }
+        }
+      ]
+    },
+    "relationship-operators": {
+      "patterns": [
+        {
+          "match": "(<<)(specializes|redefines|conjugates|derives|subsets|satisfies|allocated\\s+to|derives\\s+from)(>>)",
+          "captures": {
+            "1": { "name": "punctuation.definition.operator.begin.deal" },
+            "2": { "name": "keyword.operator.relationship.deal" },
+            "3": { "name": "punctuation.definition.operator.end.deal" }
+          }
+        }
+      ]
+    },
+    "multiplicity": {
+      "patterns": [
+        {
+          "match": "(\\[)\\s*(\\d+|\\*)\\s*(\\.\\.)\\s*(\\d+|\\*)\\s*(\\])",
+          "captures": {
+            "1": { "name": "punctuation.definition.multiplicity.begin.deal" },
+            "2": { "name": "constant.numeric.multiplicity.deal" },
+            "3": { "name": "keyword.operator.range.deal" },
+            "4": { "name": "constant.numeric.multiplicity.deal" },
+            "5": { "name": "punctuation.definition.multiplicity.end.deal" }
+          }
+        },
+        {
+          "match": "(\\[)\\s*(\\d+|\\*)\\s*(\\])",
+          "captures": {
+            "1": { "name": "punctuation.definition.multiplicity.begin.deal" },
+            "2": { "name": "constant.numeric.multiplicity.deal" },
+            "3": { "name": "punctuation.definition.multiplicity.end.deal" }
+          }
+        }
+      ]
+    },
+    "element-keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.element.deal",
+          "match": "(?<![\\w-])(part|port|action|state|requirement|constraint|attribute|item|interface|connection|flow|allocation|need|use\\s+case)\\s+def(?![\\w-])"
+        }
+      ]
+    },
+    "direction-keywords": {
+      "patterns": [
+        {
+          "name": "keyword.other.direction.deal",
+          "match": "(?<![\\w-])(in|out|inout)(?![\\w-])"
+        }
+      ]
+    },
+    "modifier-keywords": {
+      "patterns": [
+        {
+          "name": "storage.modifier.deal",
+          "match": "(?<![\\w-])(abstract|variation|derived|readonly|ordered)(?![\\w-])"
+        }
+      ]
+    },
+    "import-keywords": {
+      "patterns": [
+        {
+          "match": "(?<![\\w-])(import)\\s+([A-Za-z_][A-Za-z0-9_]*(?:\\.[A-Za-z_][A-Za-z0-9_]*)*)",
+          "captures": {
+            "1": { "name": "keyword.control.import.deal" },
+            "2": { "name": "entity.name.namespace.deal" }
+          }
+        },
+        {
+          "match": "(?<![\\w-])(package)\\s+([A-Za-z_][A-Za-z0-9_]*(?:\\.[A-Za-z_][A-Za-z0-9_]*)*)",
+          "captures": {
+            "1": { "name": "keyword.control.import.deal" },
+            "2": { "name": "entity.name.namespace.deal" }
+          }
+        },
+        {
+          "name": "keyword.control.import.deal",
+          "match": "(?<![\\w-])(import|package|as)(?![\\w-])"
+        }
+      ]
+    },
+    "type-reference": {
+      "patterns": [
+        {
+          "match": "(:)\\s*([A-Z][A-Za-z0-9_]*)",
+          "captures": {
+            "1": { "name": "punctuation.separator.type.deal" },
+            "2": { "name": "entity.name.type.reference.deal" }
+          }
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.float.deal",
+          "match": "(?<![\\w-])-?\\d+\\.\\d+(?:[eE][+-]?\\d+)?(?![\\w-])"
+        },
+        {
+          "name": "constant.numeric.integer.deal",
+          "match": "(?<![\\w-])-?\\d+(?![\\w-])"
+        }
+      ]
+    },
+    "punctuation": {
+      "patterns": [
+        { "name": "punctuation.section.block.begin.deal", "match": "\\{" },
+        { "name": "punctuation.section.block.end.deal",   "match": "\\}" },
+        { "name": "punctuation.section.brackets.begin.deal", "match": "\\[" },
+        { "name": "punctuation.section.brackets.end.deal",   "match": "\\]" },
+        { "name": "punctuation.section.parens.begin.deal", "match": "\\(" },
+        { "name": "punctuation.section.parens.end.deal",   "match": "\\)" },
+        { "name": "punctuation.terminator.statement.deal", "match": ";" },
+        { "name": "punctuation.separator.comma.deal",      "match": "," },
+        { "name": "punctuation.accessor.deal",             "match": "\\." }
+      ]
+    }
+  }
+}

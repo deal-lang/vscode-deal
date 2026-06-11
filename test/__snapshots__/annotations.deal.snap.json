@@ -1,0 +1,238 @@
+[
+  {
+    "line": 1,
+    "text": "@header {",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 1,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.annotation.deal"
+        ]
+      },
+      {
+        "start": 1,
+        "end": 7,
+        "scopes": [
+          "source.deal",
+          "support.type.annotation.deal"
+        ]
+      },
+      {
+        "start": 7,
+        "end": 8,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 9,
+        "scopes": [
+          "source.deal",
+          "punctuation.section.block.begin.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "text": "  path: \"vehicle/Sedan.deal\";",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 8,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 9,
+        "scopes": [
+          "source.deal",
+          "string.quoted.double.deal",
+          "punctuation.definition.string.begin.deal"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 27,
+        "scopes": [
+          "source.deal",
+          "string.quoted.double.deal"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 28,
+        "scopes": [
+          "source.deal",
+          "string.quoted.double.deal",
+          "punctuation.definition.string.end.deal"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 29,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "text": "}",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 1,
+        "scopes": [
+          "source.deal",
+          "punctuation.section.block.end.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "text": "@trace",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 1,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.annotation.deal"
+        ]
+      },
+      {
+        "start": 1,
+        "end": 6,
+        "scopes": [
+          "source.deal",
+          "support.type.annotation.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 5,
+    "text": "part def Sedan {",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 8,
+        "scopes": [
+          "source.deal",
+          "keyword.control.element.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 16,
+        "scopes": [
+          "source.deal",
+          "punctuation.section.block.begin.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 6,
+    "text": "  @simulation",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 2,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 2,
+        "end": 3,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.annotation.deal"
+        ]
+      },
+      {
+        "start": 3,
+        "end": 13,
+        "scopes": [
+          "source.deal",
+          "support.type.annotation.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 7,
+    "text": "  attribute mass : Mass;",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 17,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "scopes": [
+          "source.deal",
+          "punctuation.separator.type.deal"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 19,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 23,
+        "scopes": [
+          "source.deal",
+          "entity.name.type.reference.deal"
+        ]
+      },
+      {
+        "start": 23,
+        "end": 24,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 8,
+    "text": "}",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 1,
+        "scopes": [
+          "source.deal",
+          "punctuation.section.block.end.deal"
+        ]
+      }
+    ]
+  }
+]

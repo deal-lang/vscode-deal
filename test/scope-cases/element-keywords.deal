@@ -1,0 +1,8 @@
+part def Vehicle {
+  port def hvOut;
+  action def start();
+  state def Idle;
+  requirement def REQ_001 {
+    doc: "Range >= 300km";
+  }
+}

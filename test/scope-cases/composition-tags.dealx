@@ -1,0 +1,4 @@
+[<system EVPlatform>]
+  [<BatteryPack as="battery" />]
+  [<connect from={battery.hvOut} to={inverter.hvIn} />]
+[</system>]

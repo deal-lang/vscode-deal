@@ -1,0 +1,67 @@
+{
+  "tagsys": {
+    "prefix": "tagsys",
+    "body": [
+      "[<system>]",
+      "$1",
+      "[</system>]"
+    ],
+    "description": "Insert a [<system>] composition block (CS-2, CS-7)."
+  },
+  "tagcon": {
+    "prefix": "tagcon",
+    "body": [
+      "[<connect from={${1:src}} to={${2:dst}}/>]"
+    ],
+    "description": "Insert a self-closing [<connect>] composition tag (CS-2, CS-4)."
+  },
+  "tagsat": {
+    "prefix": "tagsat",
+    "body": [
+      "[<satisfy req={${1:ReqId}}>]",
+      "$0",
+      "[</satisfy>]"
+    ],
+    "description": "Insert a [<satisfy>] composition block (CS-9, CS-10)."
+  },
+  "tagalloc": {
+    "prefix": "tagalloc",
+    "body": [
+      "[<allocate to={${1:Target}}>]",
+      "$0",
+      "[</allocate>]"
+    ],
+    "description": "Insert an [<allocate>] composition block (CS-12)."
+  },
+  "tagtrace": {
+    "prefix": "tagtrace",
+    "body": [
+      "[<traceability from={${1:src}} to={${2:dst}}/>]"
+    ],
+    "description": "Insert a [<traceability>] composition tag (CS-9)."
+  },
+  "header": {
+    "prefix": "header",
+    "body": [
+      "@header {",
+      "  $0",
+      "}"
+    ],
+    "description": "Insert a @header { ... } block (FS-1, FS-2)."
+  },
+  "import": {
+    "prefix": "import",
+    "body": [
+      "import ${1:path};"
+    ],
+    "description": "Insert an import statement (PS-4)."
+  },
+  "pkg": {
+    "prefix": "pkg",
+    "body": [
+      "package ${1:path};",
+      "$0"
+    ],
+    "description": "Insert a package declaration (PS-2)."
+  }
+}

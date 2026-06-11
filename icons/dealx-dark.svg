@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <title>DEAL composition file (dark)</title>
+  <path d="M9 6 L3 16 L9 26" fill="none" stroke="#c594c5" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M23 6 L29 16 L23 26" fill="none" stroke="#c594c5" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="12" y="12" width="8" height="8" rx="1.5" ry="1.5"
+        fill="#c594c5" opacity="0.85"/>
+  <text x="16" y="18.5" font-family="monospace" font-size="6" font-weight="bold"
+        fill="#1e2433" text-anchor="middle">X</text>
+</svg>

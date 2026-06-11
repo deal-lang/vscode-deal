@@ -1,0 +1,242 @@
+[
+  {
+    "line": 1,
+    "text": "part def Sedan <<specializes>> Vehicle;",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 8,
+        "scopes": [
+          "source.deal",
+          "keyword.control.element.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 15,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 17,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.begin.deal"
+        ]
+      },
+      {
+        "start": 17,
+        "end": 28,
+        "scopes": [
+          "source.deal",
+          "keyword.operator.relationship.deal"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 30,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.end.deal"
+        ]
+      },
+      {
+        "start": 30,
+        "end": 38,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 38,
+        "end": 39,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "text": "part def Roadster <<redefines>> Wheel;",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 8,
+        "scopes": [
+          "source.deal",
+          "keyword.control.element.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 18,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 20,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.begin.deal"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 29,
+        "scopes": [
+          "source.deal",
+          "keyword.operator.relationship.deal"
+        ]
+      },
+      {
+        "start": 29,
+        "end": 31,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.end.deal"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 37,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 37,
+        "end": 38,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "text": "port def UsbA <<conjugates>> UsbB;",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 8,
+        "scopes": [
+          "source.deal",
+          "keyword.control.element.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 14,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 14,
+        "end": 16,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.begin.deal"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 26,
+        "scopes": [
+          "source.deal",
+          "keyword.operator.relationship.deal"
+        ]
+      },
+      {
+        "start": 26,
+        "end": 28,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.end.deal"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 33,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 34,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "text": "requirement def REQ_002 <<derives>> REQ_001;",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 15,
+        "scopes": [
+          "source.deal",
+          "keyword.control.element.deal"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 24,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 24,
+        "end": 26,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.begin.deal"
+        ]
+      },
+      {
+        "start": 26,
+        "end": 33,
+        "scopes": [
+          "source.deal",
+          "keyword.operator.relationship.deal"
+        ]
+      },
+      {
+        "start": 33,
+        "end": 35,
+        "scopes": [
+          "source.deal",
+          "punctuation.definition.operator.end.deal"
+        ]
+      },
+      {
+        "start": 35,
+        "end": 43,
+        "scopes": [
+          "source.deal"
+        ]
+      },
+      {
+        "start": 43,
+        "end": 44,
+        "scopes": [
+          "source.deal",
+          "punctuation.terminator.statement.deal"
+        ]
+      }
+    ]
+  }
+]

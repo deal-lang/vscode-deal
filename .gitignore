@@ -1,0 +1,7 @@
+node_modules/
+out/
+*.vsix
+server/
+.vscode-test/
+test/__snapshots__/*.snap
+!test/__snapshots__/.gitkeep

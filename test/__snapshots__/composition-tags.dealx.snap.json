@@ -1,0 +1,295 @@
+[
+  {
+    "line": 1,
+    "text": "[<system EVPlatform>]",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 2,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.begin.deal"
+        ]
+      },
+      {
+        "start": 2,
+        "end": 8,
+        "scopes": [
+          "source.dealx",
+          "entity.other.attribute-name.composition.deal"
+        ]
+      },
+      {
+        "start": 8,
+        "end": 19,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 21,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.end.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "text": "  [<BatteryPack as=\"battery\" />]",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 2,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.begin.deal"
+        ]
+      },
+      {
+        "start": 4,
+        "end": 15,
+        "scopes": [
+          "source.dealx",
+          "entity.other.attribute-name.composition.deal"
+        ]
+      },
+      {
+        "start": 15,
+        "end": 16,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 16,
+        "end": 18,
+        "scopes": [
+          "source.dealx",
+          "keyword.control.import.deal"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 19,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 19,
+        "end": 20,
+        "scopes": [
+          "source.dealx",
+          "string.quoted.double.deal",
+          "punctuation.definition.string.begin.deal"
+        ]
+      },
+      {
+        "start": 20,
+        "end": 27,
+        "scopes": [
+          "source.dealx",
+          "string.quoted.double.deal"
+        ]
+      },
+      {
+        "start": 27,
+        "end": 28,
+        "scopes": [
+          "source.dealx",
+          "string.quoted.double.deal",
+          "punctuation.definition.string.end.deal"
+        ]
+      },
+      {
+        "start": 28,
+        "end": 29,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 29,
+        "end": 32,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.end.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "text": "  [<connect from={battery.hvOut} to={inverter.hvIn} />]",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 2,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 2,
+        "end": 4,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.begin.deal"
+        ]
+      },
+      {
+        "start": 4,
+        "end": 11,
+        "scopes": [
+          "source.dealx",
+          "entity.other.attribute-name.composition.deal"
+        ]
+      },
+      {
+        "start": 11,
+        "end": 17,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 17,
+        "end": 18,
+        "scopes": [
+          "source.dealx",
+          "punctuation.section.block.begin.deal"
+        ]
+      },
+      {
+        "start": 18,
+        "end": 25,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 25,
+        "end": 26,
+        "scopes": [
+          "source.dealx",
+          "punctuation.accessor.deal"
+        ]
+      },
+      {
+        "start": 26,
+        "end": 31,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 31,
+        "end": 32,
+        "scopes": [
+          "source.dealx",
+          "punctuation.section.block.end.deal"
+        ]
+      },
+      {
+        "start": 32,
+        "end": 36,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 36,
+        "end": 37,
+        "scopes": [
+          "source.dealx",
+          "punctuation.section.block.begin.deal"
+        ]
+      },
+      {
+        "start": 37,
+        "end": 45,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 45,
+        "end": 46,
+        "scopes": [
+          "source.dealx",
+          "punctuation.accessor.deal"
+        ]
+      },
+      {
+        "start": 46,
+        "end": 50,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 50,
+        "end": 51,
+        "scopes": [
+          "source.dealx",
+          "punctuation.section.block.end.deal"
+        ]
+      },
+      {
+        "start": 51,
+        "end": 52,
+        "scopes": [
+          "source.dealx"
+        ]
+      },
+      {
+        "start": 52,
+        "end": 55,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.end.deal"
+        ]
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "text": "[</system>]",
+    "tokens": [
+      {
+        "start": 0,
+        "end": 3,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.begin.deal"
+        ]
+      },
+      {
+        "start": 3,
+        "end": 9,
+        "scopes": [
+          "source.dealx",
+          "entity.other.attribute-name.composition.deal"
+        ]
+      },
+      {
+        "start": 9,
+        "end": 11,
+        "scopes": [
+          "source.dealx",
+          "punctuation.definition.tag.end.deal"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+part def Bus {
+  port def busPorts : Port [1..*];
+  attribute lanes : Int [0..1];
+  attribute axles : Int [3];
+}

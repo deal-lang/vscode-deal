@@ -1,0 +1,152 @@
+{
+  "name": "vscode-deal",
+  "displayName": "DEAL Language",
+  "description": "Syntax highlighting, snippets, and language-server support for the DEAL systems-engineering authoring language.",
+  "version": "0.3.0",
+  "publisher": "deal-lang",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deal-lang/vscode-deal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deal-lang/vscode-deal/issues"
+  },
+  "homepage": "https://deal-lang.org",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets",
+    "Formatters"
+  ],
+  "keywords": [
+    "deal",
+    "sysml",
+    "systems-engineering",
+    "lsp"
+  ],
+  "activationEvents": [
+    "onLanguage:deal",
+    "onLanguage:dealx",
+    "workspaceContains:**/deal.toml"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "deal",
+        "aliases": [
+          "DEAL"
+        ],
+        "extensions": [
+          ".deal"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/deal-light.svg",
+          "dark": "./icons/deal-dark.svg"
+        }
+      },
+      {
+        "id": "dealx",
+        "aliases": [
+          "DEAL Composition"
+        ],
+        "extensions": [
+          ".dealx"
+        ],
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "./icons/dealx-light.svg",
+          "dark": "./icons/dealx-dark.svg"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "deal",
+        "scopeName": "source.deal",
+        "path": "./syntaxes/deal.tmLanguage.json"
+      },
+      {
+        "language": "dealx",
+        "scopeName": "source.dealx",
+        "path": "./syntaxes/dealx.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "deal",
+        "path": "./snippets/deal.json"
+      },
+      {
+        "language": "dealx",
+        "path": "./snippets/dealx.json"
+      }
+    ],
+    "configuration": {
+      "title": "DEAL",
+      "properties": {
+        "deal.lsp.path": {
+          "type": "string",
+          "default": "",
+          "description": "Override path to the deal-lsp binary. When empty, the extension uses the bundled binary or downloads from GitHub Releases (Plan 06)."
+        },
+        "deal.lsp.trace": {
+          "type": "string",
+          "enum": [
+            "off",
+            "messages",
+            "verbose"
+          ],
+          "default": "off",
+          "description": "Trace the LSP communication between VS Code and deal-lsp."
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "deal.restartServer",
+        "title": "DEAL: Restart Language Server"
+      },
+      {
+        "command": "deal.showOutput",
+        "title": "DEAL: Show Output Channel"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "pretest": "tsc -p ./",
+    "test": "vscode-test",
+    "test:grammars": "mocha --require ts-node/register \"test/**/*.test.ts\"",
+    "test:unit": "mocha --config .mocharc.unit.json"
+  },
+  "dependencies": {
+    "tar": "7.5.15",
+    "vscode-languageclient": "9.0.1"
+  },
+  "devDependencies": {
+    "@types/chai": "4.3.14",
+    "@types/mocha": "10.0.6",
+    "@types/node": "20.11.30",
+    "@types/sinon": "21.0.1",
+    "@types/vscode": "1.95.0",
+    "@typescript-eslint/eslint-plugin": "8.60.0",
+    "@typescript-eslint/parser": "8.60.0",
+    "@vscode/test-cli": "0.0.12",
+    "@vscode/test-electron": "2.5.2",
+    "chai": "4.4.1",
+    "eslint": "9.0.0",
+    "mocha": "11.7.6",
+    "sinon": "22.0.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.4.3",
+    "vscode-oniguruma": "2.0.1",
+    "vscode-textmate": "9.1.0"
+  }
+}

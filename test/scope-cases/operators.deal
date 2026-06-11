@@ -1,0 +1,4 @@
+part def Sedan <<specializes>> Vehicle;
+part def Roadster <<redefines>> Wheel;
+port def UsbA <<conjugates>> UsbB;
+requirement def REQ_002 <<derives>> REQ_001;

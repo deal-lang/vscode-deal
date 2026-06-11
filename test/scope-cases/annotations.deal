@@ -1,0 +1,8 @@
+@header {
+  path: "vehicle/Sedan.deal";
+}
+@trace
+part def Sedan {
+  @simulation
+  attribute mass : Mass;
+}

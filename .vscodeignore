@@ -1,0 +1,13 @@
+.vscode/**
+.vscode-test/**
+out/test/**
+src/test/**
+test/**
+**/*.ts.map
+**/*.test.ts
+**/tsconfig.json
+.gitignore
+.gitattributes
+node_modules/**
+.mocharc.unit.json
+.vscode-test.mjs
