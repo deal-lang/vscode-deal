@@ -1,0 +1,38 @@
+name: ci
+
+# Per-commit gate (P1 WS-E) for the vscode-deal extension. Runs the pure-Node
+# suites — grammar snapshot + unit (status state machine) — which need no
+# Electron/display. The activation + auto_download suites are Electron-based and
+# require a headless display; they are deferred to P3.
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    name: compile + pure-node tests
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: npm ci --no-audit --no-fund
+
+      - name: Compile (tsc)
+        run: npm run compile
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Grammar snapshot tests
+        run: npm run test:grammars
+
+      - name: Unit tests
+        run: npm run test:unit

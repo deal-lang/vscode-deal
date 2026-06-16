@@ -55,6 +55,50 @@
     ],
     "description": "Declare a constraint definition (SD-1)."
   },
+  "calcdef": {
+    "prefix": "calcdef",
+    "body": [
+      "calc def ${1:Name}(${2:params}) : ${3:Type} {",
+      "  return $0;",
+      "}"
+    ],
+    "description": "Declare a calculation definition (SD-21)."
+  },
+  "allocationdef": {
+    "prefix": "allocationdef",
+    "body": [
+      "allocation def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare an allocation definition (SD-1)."
+  },
+  "needdef": {
+    "prefix": "needdef",
+    "body": [
+      "need def ${1:Name} {",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a need definition (SD-18)."
+  },
+  "usecasedef": {
+    "prefix": "usecasedef",
+    "body": [
+      "use case def ${1:Name} {",
+      "  subject ${2:subject};",
+      "  $0",
+      "}"
+    ],
+    "description": "Declare a use-case definition (SD-20)."
+  },
+  "actordef": {
+    "prefix": "actordef",
+    "body": [
+      "actor def ${1:Name};"
+    ],
+    "description": "Declare an actor definition (SD-18b)."
+  },
   "attrdef": {
     "prefix": "attrdef",
     "body": [
