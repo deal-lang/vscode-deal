@@ -146,7 +146,7 @@
     "test:unit": "mocha --config .mocharc.unit.json"
   },
   "dependencies": {
-    "tar": "7.5.15",
+    "tar": "7.5.16",
     "vscode-languageclient": "9.0.1"
   },
   "devDependencies": {
