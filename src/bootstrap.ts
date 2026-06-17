@@ -52,10 +52,10 @@ import { sha256File } from './sha256';
 
 // ─── Version pin ──────────────────────────────────────────────────────
 // D-52: hardcoded pin matching the vscode-deal extension version in
-// package.json. CI's release.yml derives the GitHub Release tag (v0.3.0)
+// package.json. CI's release.yml derives the GitHub Release tag (v0.5.0)
 // from this constant via patch-bootstrap-sha.js, so the .vsix and the
 // matching deal-lsp binary always ship as a locked pair.
-export const DEAL_LSP_VERSION = '0.3.0';
+export const DEAL_LSP_VERSION = '0.5.0';
 
 // ─── Platform triples ─────────────────────────────────────────────────
 export type TripleKey =

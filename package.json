@@ -2,9 +2,28 @@
   "name": "vscode-deal",
   "displayName": "DEAL Language",
   "description": "Syntax highlighting, snippets, and language-server support for the DEAL systems-engineering authoring language.",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "publisher": "deal-lang",
   "license": "Apache-2.0",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#062b54",
+    "theme": "dark"
+  },
+  "qna": "marketplace",
+  "pricing": "Free",
+  "badges": [
+    {
+      "url": "https://img.shields.io/github/actions/workflow/status/deal-lang/vscode-deal/ci.yml?branch=main&label=CI",
+      "href": "https://github.com/deal-lang/vscode-deal/actions",
+      "description": "CI status"
+    },
+    {
+      "url": "https://img.shields.io/badge/license-Apache--2.0-blue",
+      "href": "https://github.com/deal-lang/vscode-deal/blob/main/LICENSE",
+      "description": "License: Apache-2.0"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/deal-lang/vscode-deal.git"
