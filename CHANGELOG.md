@@ -21,6 +21,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - Hover now shows the SysML v2 metaclass, clause, and KerML basis for DEAL
   constructs — this comes from the bundled `deal-lsp` server; no extension
   change is required to benefit from it.
+- The bundled `deal-lsp` server now provides find-all-references, document
+  highlight, verified rename (cross-file, including `import` statements),
+  document outline (`documentSymbol`), signature help for `calc`/`constraint`
+  invocations, and did-you-mean quick-fixes for unresolved references — all
+  driven by compiler-exact cross-file name resolution. No extension change is
+  required; the capabilities activate automatically with the updated server.
 
 ## [0.3.0] - 2026-06-11
 
